@@ -27,13 +27,13 @@ def get():
     <ion-app>
       <ion-header>
         <ion-navbar>
-          <ion-title>Quantum AI Blockchain Fusion Pokemon</ion-title>
+          <ion-title style="padding: 10px">Quantum AI Blockchain Nuclear Fusion Pokemon</ion-title>
         </ion-navbar>
       </ion-header>
 
       <ion-content padding>
       	<div style="margin: 10px">Enter your Pokemon's stats</div>
-        <div id="user_input" style="margin: 10px">
+        <div id="user_input" style="margin: 10px; border: 1px solid rgb(204, 204, 204) !important; border-radius: 5px; padding: 2px">
 		<ion-item>
 		  <ion-label>HP: </ion-label>
 		  <ion-input id="hp"></ion-input>
@@ -60,7 +60,7 @@ def get():
 		</ion-item>
 		<ion-button onClick="send_data()">Check Pokemon</ion-button>
         </div>
-        <div id="result" style="margin: 10px"></div>
+        <div id="result" style="margin: 10px; border: 1px solid rgb(204, 204, 204) !important; border-radius: 5px; padding: 2px"></div>
       </ion-content>
     </ion-app>
 
