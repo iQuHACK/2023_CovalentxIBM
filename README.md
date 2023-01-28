@@ -35,7 +35,7 @@ The required components of your project are:
 - UI, API, CLI, or some accessible interface. Designing the user interface for their application, taking into account the needs and preferences of end users.
 - Covalent*
 - Web Hosted (or internet-exposed proxy to local computer)
-- A backend that uses IBMQ Quantum computer
+- Uses IBM Quantum Nairobi system (or Oslo as a backup)
 
 > *Your program does not necessarily need to invoke covalent workflows for each end-user request; it can be a one-off process (for example, training a model, then publishing a model to S3 where other workflows can later be used to serve requests using hybrid hardware)
 
