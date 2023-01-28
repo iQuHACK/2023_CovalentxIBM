@@ -2,13 +2,13 @@
 
 <img src="./IQUHACK_banner.png" width=100%>
 
-Welcome to the MIT iQuHack2023 Challenge for those looking to access MIT at visitors for the challenge please visit [here](https://tim-tickets.atlas-apps.mit.edu/J7xSzY7VtAm1JUT4A).
+Welcome to the MIT iQuHack2023 Challenge for those looking to access MIT as visitors for the challenge please visit [here](https://tim-tickets.atlas-apps.mit.edu/J7xSzY7VtAm1JUT4A).
 
 In order to gain access to IBM Quantum hardware:
 
 1. Create IBM Cloud account
 2. Send a message with the email address you used above to the #ibm channel to the [iQuHack Slack](iquhack.slack.com)
-3. You should recieve an email that you've been added to the `IBM Quantum` Project
+3. You should receive an email that you've been added to the `IBM Quantum` Project
 
 ## Overview
 
