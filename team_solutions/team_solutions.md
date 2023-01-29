@@ -1,7 +1,7 @@
 # List of Projects
 
-### Sample Team
+### Team Entangled
 
-- [Code](Team Entangled)
-- [Documentation](./team_entangled/static/assets/docs/)
+- [Code](./team_entangled)
+- [Documentation](./team_entangled/beatqraft/static/assets/docs/)
 
