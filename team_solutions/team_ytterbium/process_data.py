@@ -7,7 +7,7 @@ import csv
 
 def read_data(file_name, target_features=5):
     """
-    Based of Brown CSCI 1420
+    Based off of Brown CSCI 1420
 
     Reads the data from the input file and splits it into normalized inputs 
     and labels. Runs PCA to reduce the feature space.
