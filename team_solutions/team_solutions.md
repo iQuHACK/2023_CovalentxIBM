@@ -1,6 +1,6 @@
 # List of Projects
 
-### Sample Team
+### Octuple
 
-- [Code](TEAM_NAME)
-- [Documentation](https://url_to_documentation.com)
+- [Code](Octpule)
+- [Documentation](https://1drv.ms/v/s!AmxRgPBiALHuuG83V6fZ8Ik7QKAm?e=JzCBub)
