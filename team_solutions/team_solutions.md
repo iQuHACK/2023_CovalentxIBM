@@ -2,5 +2,5 @@
 
 ### Sample Team
 
-- [Code](Qimmies)
-- [Documentation](https://inquiry.alwaysreboot.com/about)
+- [Code](TEAM_NAME)
+- [Documentation](https://url_to_documentation.com)
