@@ -76,11 +76,10 @@ def read_input(input, pca_filename="data/pca.pkl"):
         initial_features[i] = input.count(char)
         i += 1
     seq_cap = np.array(list(map(len, re.findall(r"[A-Z]+", input))))
-    if len(seq_cap) == 0:
-        return initial_features
-    initial_features[i] = np.average(seq_cap)
-    initial_features[i + 1] = np.max(seq_cap)
-    initial_features[i + 2] = np.sum(seq_cap)
+    if len(seq_cap) != 0:
+        initial_features[i] = np.average(seq_cap)
+        initial_features[i + 1] = np.max(seq_cap)
+        initial_features[i + 2] = np.sum(seq_cap)
 
     # MAPPING TO 5 FEATURE SPACE
     with open(pca_filename, "rb") as fd:
