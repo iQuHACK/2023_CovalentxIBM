@@ -1,5 +1,5 @@
 # MRI classification using Quanvolutional layer and QNN
-#Members: Chinmay Tompe, Joshua B., Kevin Tang, Max Huber, Zain Mughal.
+*Members*: *Chinmay Tompe, Joshua B., Kevin Tang, Max Huber, Zain Mughal*
 
 v0.0 Submission for iQuHack 2023
 
