@@ -14,7 +14,7 @@ test_base64 = base64.b64encode(open(test_png, 'rb').read()).decode('ascii')
 app.layout = html.Div([
     html.Img(src='data:image/png;base64,{}'.format(test_base64), style={'height':'25%', 'width':'25%'}),
     html.Br(),
-    html.H6("qSpam, TEAM Ytterbium @ iQuHack 2023."),
+    html.H6("qSpam, TEAM Ytterbium @ iQuHack 2023.",),
     html.Br(),
     html.Div(dcc.Input(id='input-on-submit', type='text')),
     html.Button('Submit', id='submit-val', n_clicks=0),
