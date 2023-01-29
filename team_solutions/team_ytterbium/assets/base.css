@@ -1,0 +1,23 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,500&family=IBM+Plex+Mono&family=Public+Sans:wght@100;400&family=Roboto+Condensed&display=swap');
+
+h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 48px !important;
+  font-weight: 300 !important;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+}
+body {
+  background: rgb(10,24,46);
+  color: white;
+  padding-left: 20%;
+}
