@@ -3,6 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import base64
+from process_data import *
 from func import *
 
 import uuid
@@ -24,8 +25,9 @@ app = dash.Dash(
     Input(component_id='my-input1', component_property='value')
         )
 def update_output_div(input_value):
-    output = transform(input_value)
-    return f'Result: {output}'
+    tmp = transform(input_value)
+    output = predict(tmp)
+    return 'Spam!' if output == 1 else "Not spam"
 
 test_png = 'figs/schrodingersduck.png'
 test_base64 = base64.b64encode(open(test_png, 'rb').read()).decode('ascii')
