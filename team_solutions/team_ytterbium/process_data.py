@@ -3,19 +3,19 @@ import matplotlib.pyplot as plt
 from sklearn import decomposition
 from sklearn import datasets
 import csv
+import pickle as pk
 
 
-def read_data(file_name, target_features=5):
+def read_data(file_name, target_features=5, pca_filename="data/pca.pkl"):
     """
     Based off of Brown CSCI 1420
 
     Reads the data from the input file and splits it into normalized inputs 
-    and labels. Runs PCA to reduce the feature space.
+    and labels. Runs PCA to reduce the feature space, and saves fitted PCA object
 
     :param file_name: path to the desired data file
     :return: two numpy arrays, one containing the inputs and one containing
               the labels
-             a fitted pca object
     """
     inputs, labels, classes = [], [], set()
     with open(file_name) as f:
@@ -52,4 +52,7 @@ def read_data(file_name, target_features=5):
     pca.fit(inputs)
     inputs = pca.transform(inputs)
 
-    return inputs, labels, pca
+    with open(pca_filename, "wb") as fd:
+        pk.dump(pca, fd)
+
+    return inputs, labels

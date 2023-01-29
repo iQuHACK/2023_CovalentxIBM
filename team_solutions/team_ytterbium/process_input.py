@@ -1,5 +1,6 @@
 import numpy as np
 import re
+import pickle as pk
 
 word_list = [
     "you",
@@ -62,7 +63,9 @@ char_list = [
 ]
 
 
-def read_input(input):
+def read_input(input, pca_filename="data/pca.pkl"):
+
+    # MAPPING TO 57 FEATURE SPACE
     input_words = re.findall(r'[a-zA-Z0-9]+', input.lower())
     print(input_words)
     initial_features = np.zeros(57)
@@ -79,4 +82,9 @@ def read_input(input):
     initial_features[i] = np.average(seq_cap)
     initial_features[i + 1] = np.max(seq_cap)
     initial_features[i + 2] = np.sum(seq_cap)
-    return initial_features
+
+    # MAPPING TO 5 FEATURE SPACE
+    with open(pca_filename, "rb") as fd:
+        pca = pk.load(fd)
+
+    return pca.transform(initial_features)
