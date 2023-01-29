@@ -3,6 +3,7 @@
 
 v0.0 Submission for iQuHack 2023
 
+![team logo](https://github.com/chinmaytompe/2023_CovalentxIBM/blob/main/team_solutions/images/figure1.png) 
 CMD TO RUN FRONTEND:
 $ expo start
 
@@ -15,7 +16,7 @@ The authors of the paper used max pooling and dimension reduction on the MNIST d
 
 ##Description of files
 
-[alt text] (image link)
+![architecture] (https://github.com/chinmaytompe/2023_CovalentxIBM/blob/main/team_solutions/images/figure2.png)
 
 For **Training**: run  '''bash python run.py ''' trains the QNN and saves the model in results.
 
