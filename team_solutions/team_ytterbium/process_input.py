@@ -67,7 +67,6 @@ def read_input(input, pca_filename="data/pca.pkl"):
 
     # MAPPING TO 57 FEATURE SPACE
     input_words = re.findall(r'[a-zA-Z0-9]+', input.lower())
-    print(input_words)
     initial_features = np.zeros(57)
     i = 0
     for word in word_list:
@@ -87,4 +86,4 @@ def read_input(input, pca_filename="data/pca.pkl"):
     with open(pca_filename, "rb") as fd:
         pca = pk.load(fd)
 
-    return pca.transform(initial_features)
+    return pca.transform(initial_features.reshape(1, 57))
