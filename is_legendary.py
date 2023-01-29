@@ -1,5 +1,6 @@
 import numpy as np  
 import pandas as pd
+from clustering import cluster
 
 # BEGIN COPIED CODE: from https://docs.entropicalabs.io/qaoa/notebooks/7_clusteringwithqaoa
 DF = pd.read_csv('./pokemon.csv', header=0)
@@ -33,7 +34,7 @@ def is_pokemon_legendary(stats) -> bool:
             distance_matrix[i, j] = np.linalg.norm(data[i] - data[j])
 
     # Run the quantum algorithm
-    clusters = [[0,1,2,6], [3,4,5]]
+    clusters = cluster(distance_matrix)
 
     target_cluster = clusters[0] if NUM_QBITS-1 in clusters[0] else clusters[1]
     target_cluster.remove(NUM_QBITS-1)
