@@ -25,14 +25,14 @@ I = sigma0
 ansatz = torch.randn(4, 4, requires_grad=True, dtype=torch.cfloat)
 #print(ansatz)
 with torch.no_grad():
-    X_input = ansatz + ansatz.conj().T
+    X_input = 0.5*(ansatz + ansatz.conj().T)
 X_input.requires_grad_()
 print("Here is the random ansatz plus its conjugate transpose:")
 print(X_input)
 print("\n")
 H_F = torch.randn(X_input.shape)
 H_I = torch.randn(X_input.shape)
-l = 2
+l = .5
 
 def Htheta(theta):
     return -np.cos(theta)*(torch.kron(sigmaz,sigma0)+torch.kron(sigma0,sigmaz)) -np.sin(theta)*(torch.kron(sigmax,sigma0)+torch.kron(sigma0,sigmax)) -3*torch.kron(sigmaz,sigmaz)
@@ -54,7 +54,7 @@ def Cost(H_F, H_I, l, X):
     return torch.trace(G(H_F, H_I, l, X)@G(H_F, H_I, l, X))
 
 def Cost_test(H, X):
-    X=X+X.conj().T
+    X=0.5*(X+X.conj().T)
     return torch.trace(G_test(H, dtH, X)@G_test(H, dtH, X))
 
 #print(Cost(H_F, H_I, l, X_curr))
@@ -73,10 +73,10 @@ def minimize(X_input):
 
 def minimize_test(X_input):
     X_curr = X_input
-    opt = torch.optim.Adam([X_curr], lr=0.001)
-    for _ in range(1000):
+    opt = torch.optim.Adam([X_curr], lr=0.01)
+    for _ in range(10000):
         loss = Cost_test(H, X_curr)
-        print(Cost_test(H, X_curr))
+        #print(Cost_test(H, X_curr))
         loss = abs(loss)
         opt.zero_grad()
         loss.backward()
