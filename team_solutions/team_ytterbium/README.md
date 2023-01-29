@@ -1,4 +1,4 @@
-# Quantum Kernel Methods for Real-World Data\n",
+# Quantum Kernel Methods for Real-World Data
  **Authors:** Wei-Ting Chiu, Sudatta Hor, Marley Xiong, Chelsea Zackey
 
 We present an experimental & educational attempt at using quantum-enhanced kernel methods to perform supervised learning on real-world data problems. Quantum kernel methods enable us to map data into higher dimensional feature spaces, inducing previously inaccessible topologies unto our datasets that are hard to simulate classically. In fact, for a certain class of learning problems, the us of quantum kernel methods give us a provable advantage over classical methods, making classically intractable problems solvable (see https://arxiv.org/abs/2105.03406).
