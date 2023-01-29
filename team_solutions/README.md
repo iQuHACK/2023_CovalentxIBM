@@ -14,13 +14,13 @@ Our approach to the ColvalentxIBM challenge'c call for internet and people drive
 
 The authors of the paper used max pooling and dimension reduction on the MNIST data images to redeuce it down to 14x14 from 28x28, however, given our applicationn in medical diagnosis, resolution was essential to be preserved. 
 
-##Description of files
+*Description of files*
 
-![architecture] (https://github.com/chinmaytompe/2023_CovalentxIBM/blob/main/team_solutions/images/figure2.png)
+![architecture](https://github.com/chinmaytompe/2023_CovalentxIBM/blob/main/team_solutions/images/figure2.png)
 
 For **Training**: run  '''bash python run.py ''' trains the QNN and saves the model in results.
 
-##Backends tested on: 
+*Backends tested on*: 
 
 1. IBM QASM simulator 
 2. IBM_OSLO
