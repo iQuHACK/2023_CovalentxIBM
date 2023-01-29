@@ -15,7 +15,7 @@ The authors of the paper used max pooling and dimension reduction on the MNIST d
 
 ##Description of files
 
-![alt text] (image link)
+[alt text] (image link)
 
 For **Training**: run  '''bash python run.py '''
 
