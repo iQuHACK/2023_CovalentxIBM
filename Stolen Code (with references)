@@ -1,0 +1,22 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# BEGIN COPIED CODE: from https://docs.entropicalabs.io/qaoa/notebooks/7_clusteringwithqaoa
+
+df = pd.read_csv('./data/pokemon.csv')
+df = df.set_index('#') #index pokemon by their ID number
+df = df.rename_axis('ID') #rename axis to 'ID' instead of '#'
+df = df.loc[~df.index.duplicated(keep='first')] #drop duplicates
+
+legendary = df.loc[df['Legendary'] == True].sample(5)
+non_legendary = df.loc[df['Legendary'] == False].sample(5)
+pokemon = pd.concat([legendary,non_legendary])
+
+numerical_columns = ['Total','HP','Attack','Defense','Sp. Atk','Sp. Def','Speed']
+
+labels = pokemon['Legendary']
+data = pokemon[numerical_columns].copy()
+data.head()
+
+# END COPIED CODE: from https://docs.entropicalabs.io/qaoa/notebooks/7_clusteringwithqaoa
