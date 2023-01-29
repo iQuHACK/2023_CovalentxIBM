@@ -19,7 +19,7 @@ The authors of the paper used max pooling and dimension reduction on the MNIST d
 
 *Description of files*
 
-![architecture](https://github.com/chinmaytompe/2023_CovalentxIBM/blob/main/team_solutions/images/figure2.png)
+![architecture](https://github.com/chinmaytompe/2023_CovalentxIBM/blob/main/team_solutions/images/figure0.png)
 
 For **Training**: run  '''bash python run.py ''' trains the QNN and saves the model in results.
 
