@@ -1,6 +1,6 @@
 # List of Projects
 
-### Sample Team
+### Quality over Quanta Tea
 
 - [Code](TEAM_NAME)
 - [Documentation](https://url_to_documentation.com)
