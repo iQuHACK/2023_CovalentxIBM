@@ -1,4 +1,5 @@
-from julian_code import is_pokemon_legendary
+from is_legendary import is_pokemon_legendary
+from typing import Dict
 from fastapi.responses import HTMLResponse
 import uvicorn
 
@@ -110,7 +111,7 @@ fetch('get_result', options)
 '''
 
 @app.post("/get_result")
-def root(stats: dict[str,str]):
+def root(stats: Dict[str,str]):
 	return {'status':'success',
 		'result':is_pokemon_legendary(stats)}
 
