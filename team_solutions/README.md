@@ -1,4 +1,6 @@
 # MRI classification using Quanvolutional layer and QNN
+##Members: Chinmay Tompe, Joshua B., Kevin Tang, Max Huber, Zain Mughal.
+
 v0.0 Submission for iQuHack 2023
 
 CMD TO RUN FRONTEND:
@@ -11,6 +13,10 @@ Our approach to the ColvalentxIBM challenge'c call for internet and people drive
 
 The authors of the paper used max pooling and dimension reduction on the MNIST data images to redeuce it down to 14x14 from 28x28, however, given our applicationn in medical diagnosis, resolution was essential to be preserved. 
 
+##Description of files
 
+![alt text] (image link)
+
+For **Training**: run  '''bash python run.py '''
 
 
