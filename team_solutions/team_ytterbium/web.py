@@ -27,6 +27,7 @@ app = dash.Dash(
 def update_output_div(input_value):
     tmp = transform(input_value)
     output = predict(tmp)
+    #return output
     return 'Spam!' if output == 1 else "Not spam"
 
 test_png = 'figs/schrodingersduck.png'
