@@ -4,6 +4,9 @@
 v0.0 Submission for iQuHack 2023
 
 ![team logo](https://github.com/chinmaytompe/2023_CovalentxIBM/blob/main/team_solutions/images/figure1.png) 
+
+
+
 CMD TO RUN FRONTEND:
 $ expo start
 
