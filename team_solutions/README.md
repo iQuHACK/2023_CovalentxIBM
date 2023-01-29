@@ -17,6 +17,12 @@ The authors of the paper used max pooling and dimension reduction on the MNIST d
 
 [alt text] (image link)
 
-For **Training**: run  '''bash python run.py '''
+For **Training**: run  '''bash python run.py ''' trains the QNN and saves the model in results.
+
+##Backends tested on: 
+
+1. IBM QASM simulator 
+2. IBM_OSLO
+3. Pennylane default simulator
 
 
