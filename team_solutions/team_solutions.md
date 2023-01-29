@@ -1,6 +1,6 @@
 # List of Projects
 
-### Sample Team
+### Quazam
 
-- [Code](TEAM_NAME)
-- [Documentation](https://url_to_documentation.com)
+- [Code](Quazam)
+- [Documentation](https://medium.com/@mannendri/deqrypt-c7400f5b5517)
