@@ -17,7 +17,6 @@ Though we do not assert that all (or even most) real-world datasets fall into th
 We train our model for the supervised learning task using the UCI Spambase dataset (https://archive.ics.uci.edu/ml/datasets/spambase). We train with both classical SVC and quantum SVC. For the quantum SVC, we utilize the quantum kernel method with ZZFeatureMap to encode the data. Then, the kernel is sent to a classical computer for regression. The results are shown below, where the QSVC shows comparable performance to the classical result.
 
 ![Classical Support Vector Classifier result.](./figs/svc.png)
-
 ![Quantum Support Vector Classifier result.](./figs/qsvc.png)
 
 ## Future Directions
