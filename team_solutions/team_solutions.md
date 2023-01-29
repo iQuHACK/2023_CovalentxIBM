@@ -1,6 +1,7 @@
 # List of Projects
 
-### Sample Team
+### Team Entangled
 
-- [Code](TEAM_NAME)
-- [Documentation](https://url_to_documentation.com)
+- [Code](./team_entangled)
+- [Documentation](./team_entangled/beatqraft/static/assets/docs/)
+
