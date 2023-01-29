@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iQuHACK Website</title>
+        <link rel="stylesheet" href="static/taskbar.css">
+    <head>
+    <body>
+        <div>
+            <h1 class="header">Welcome to your newest travel planner</h1>
+            <h2 class="header">Please input your travel information:</h2>
+            <form method="post" action="{{ url_for('result') }}">
+
+                <label for="Origin">Origin (IATA code):</label>
+                <input type="text" name="Origin" id="Origin" value="ORD">
+                <br/>
+
+                <label for="Destination">Destination (IATA code):</label>
+                <input type="text" name="Destination" id="Destination" value="BOS">
+                <br/>
+
+                <label for="Departure_date">Departure_date (YYYY-MM-DD):</label>
+                <input type="text" name="Departure_date" id="Departure_date" value="2023-01-29">
+                <br/>
+
+                <label for="Return_date">Return_date (YYYY-MM-DD):</label>
+                <input type="text" name="Return_date" id="Return_date">
+                <br/>
+                
+                <h2 class="header">Please choose your travel preference:</h2>
+
+                <label for="Travel_time">Travel time</label>
+                <select id="Travel_time" name="Travel_time">
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+
+                <label for="Airlines">Airlines</label>
+                <select id="Airlines" name="Airlines">
+                    <option value="American">American</option>
+                    <option value="Delta">Delta</option>
+                    <option value="United">United</option>
+                    <option value="Southwest">United</option>
+                </select>
+
+                <label for="Food_type">Food_type</label>
+                <select id="Food_type" name="Food_type">
+                    <option value="Mexican">United</option>
+                    <option value="American">American</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Indian">Indian</option>
+                </select>
+
+                <label for="Price_range">Price_range</label>
+                <select id="Price_range" name="Price_range">
+                    <option value="$">$</option>
+                    <option value="$$">$$</option>
+                    <option value="$$$">$$$</option>
+                </select>
+
+                <label for="Hotel_star">Hotel_star</label>
+                <select id="Hotel_star" name="Hotel_star">
+                    <option value="**">*</option>
+                    <option value="***">***</option>
+                    <option value="****">****</option>
+                    <option value="*****">*****</option>
+                </select>
+
+                <br/>
+                <input type="submit" value="Submit"/>
+            </form>
+            </br>
+            <h3>Basic Info:</h3>
+            <p>The trip is from {{Origin}} to {{Destination}}</p>
+            <p>Departure date: {{Departure_date}}. Return date: {{Return_date}}</p>
+            <h4>Transportation preference:</h4>
+            <p>Airlines: {{Airlines}}</p>
+            <p>Travel time: {{Travel_time}}</p>
+            <h4>Food preference:</h4>
+            <p>Type: {{Food_type}}</p>
+            <p>Food price range: {{Price_range}}</p>
+            </br>
+            <h3>Lowest fare:</h3>
+            <h4>Airline:</h4>
+            <p>lowest_ticket_price: {{lowest_flight_price}}</p>
+            <p>cheapest_flight_id_departing: {{cheapest_flight_id_departing}}</p>
+            <p>cheapest_flight_id_returning: {{cheapest_flight_id_returning}}</p>
+            </br>
+            <h4>Hotel:</h4>
+            <p>cheapest_hotel_name: {{cheapest_hotel_name}}</p>
+            <p>lowest_hotel_price: {{lowest_hotel_price}}</p>
+            </br>
+            <h4>Restaurant:</h4>
+            <p>cheapest_restaurant_name: {{cheapest_restaurant_name}}</p>
+            <p>lowest_restaurant_price: {{lowest_restaurant_price}}</p>
+            </br>
+            <p>grover_result: {{grover_result}}</p>
+        </div>
+    </body>
+</html>

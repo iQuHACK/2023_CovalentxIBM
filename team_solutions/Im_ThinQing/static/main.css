@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    text-align: center;
+  }
+
+.header {
+  height:60px;
+  padding: 30px;
+  font-family: Verdana, sans-serif;
+  color: white;
+  font-size: 160px;
+}
+
+.tagline {
+  padding: 10px;
+  font-family: Verdana, sans-serif;
+  color: white;
+  font-size: 90px;
+}
+  
+.button {
+  height: 200px;
+  width: 200px;
+  padding: 0px;
+  border-radius: 60%;
+  border: 4px solid #ffffff;
+  overflow:hidden;
+  background: #000000; 
+  font-size: 13px;
+  color:white;
+  font-size: 50px;
+}
