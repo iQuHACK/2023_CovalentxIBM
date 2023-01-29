@@ -1,0 +1,39 @@
+import torch
+import torch.nn as nn
+import numpy as np
+
+# goal: 7 by 7 parameter "weights" need to be adjusted to minimize loss defined by the square of the trace of the weight matrix
+
+# start with 3 by 3 as an example
+ansatz = torch.randn(3, 3, requires_grad=True)
+print(ansatz)
+with torch.no_grad():
+    X_input = ansatz + ansatz.conj().T
+X_input.requires_grad_()
+print(X_input)
+H_F = torch.randn(X_input.shape)
+H_I = torch.randn(X_input.shape)
+l = 2
+
+def G(H_F, H_I, l, X):
+    return H_F-H_I+1j*(X@(l*H_F+(1-l)*H_I)-(l*H_F+(1-l)*H_I)@X)
+
+def Cost(H_F, H_I, l, X):
+    return torch.trace(G(H_F, H_I, l, X)@G(H_F, H_I, l, X))
+
+#print(Cost(H_F, H_I, l, X_curr))
+#print(X_input)
+
+def minimize(X_input):
+    X_curr = X_input
+    opt = torch.optim.Adam([X_curr], lr=0.01)
+    for _ in range(1000):
+      loss = abs(Cost(H_F, H_I, l, X_curr))
+      opt.zero_grad()
+      loss.backward()
+      opt.step()
+    X_output = X_curr
+    return X_output
+
+print("Initial cost: "+ str(abs(Cost(H_F, H_I, l, X_input))))
+print("Final cost: "+ str(abs(Cost(H_F, H_I, l, minimize(X_input)))))
