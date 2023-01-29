@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn
+import numpy as np
+
 # goal: 7 by 7 parameter "weights" need to be adjusted to minimize loss defined by the square of the trace of the weight matrix
 
 # start with 3 by 3 as an example
