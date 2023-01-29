@@ -31,6 +31,8 @@ app.layout = html.Div([
     html.Button('Submit', id='submit-val',
                 className="rounded-full font-bold m-5 bg-cyan-200 text-black px-5 py-3", n_clicks=0),
     html.Br(),
+    html.Div(id='container-button-basic',
+            children='Enter a value and press submit')
 ])
 
 
@@ -46,4 +48,4 @@ def update_output(n_clicks, value):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
