@@ -2,5 +2,6 @@
 
 ### Sample Team
 
-- [Code](TEAM_NAME)
-- [Documentation](https://url_to_documentation.com)
+- [Code](Team Entangled)
+- [Documentation](./team_entangled/static/assets/docs/)
+
