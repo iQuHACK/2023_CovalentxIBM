@@ -7,7 +7,8 @@ Though we do not assert that all (or even most) real-world datasets fall into th
 
 ## Instructions
   
-  ``run python web2.py enter email message
+  **Training** - Run `python train.py`, which executes a Covalent workflow to train and store the models in `models/`.
+  **Running** - Run `python web2.py`, which will launch a dash web application. Paste your email message in the box and hit submit to use the model to predict if it is spam or not.
 
 ## Technical Aspects
 
