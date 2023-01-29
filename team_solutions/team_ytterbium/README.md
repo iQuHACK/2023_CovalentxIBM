@@ -13,5 +13,11 @@ Though we do not assert that all (or even most) real-world datasets fall into th
 
 ## Technical Aspects
 
+We train our model for the supervised learning task using the UCI Spambase dataset (https://archive.ics.uci.edu/ml/datasets/spambase). We train with both classical SVC and quantum SVC. For the quantum SVC, we utilize the quantum kernel method with ZZFeatureMap to encode the data. Then, the kernel is sent to a classical computer for regression. The results are shown below, where the QSVC shows comparable performance to the classical result.
+
+![Classical Support Vector Classifier result.](./figs/svc.png)
+
+![Quantum Support Vector Classifier result.](./figs/qsvc.png)
+
 ## Future Directions
 As mentioned above, although the use of quantum kernel methods has a demonstrable advantage over classical methods for learning problems involving data endowed with group structure, real life can't always be idealized in such a convenient way; however, the original publication suggests some promise that quantum kernel methods can still be used meaningfully to learn about certain datasets in the presence of a marginal degree of error (https://arxiv.org/abs/2105.03406). In this spirit, we feel it would be interesting to further explore the use of these methods for the following applications/research: 
