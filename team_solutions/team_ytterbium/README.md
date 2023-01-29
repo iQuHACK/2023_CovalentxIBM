@@ -3,6 +3,9 @@
 
 We present an experimental & educational attempt at using quantum-enhanced kernel methods to perform supervised learning on real-world data problems. Quantum kernel methods enable us to map data into higher dimensional feature spaces, inducing previously inaccessible topologies unto our datasets that are hard to simulate classically. In fact, for a certain class of learning problems, the us of quantum kernel methods give us a provable advantage over classical methods, making classically intractable problems solvable (see https://arxiv.org/abs/2105.03406).
 
+![Classical Support Vector Classifier result.](./figs/classical.png)
+![Quantum Support Vector Classifier result.](./figs/quantum.png)
+
 Though we do not assert that all (or even most) real-world datasets fall into the category of learning problems mentioned above, there remains an outstanding question how far we can push the bounds of applicability of these methods, which we aim to explore here and present to end-users. Though we start off with the simple problem of spam detection in user mail, the intention was to later enable the user to apply and explore these methods to even more meaningful applications, such as natural disaster management (https://medium.com/qiskit/exploring-quantum-versus-classical-machine-learning-methods-for-disaster-management-aa58d6a3ee68), medical diagnoses, and much more.
 
 ## Instructions
