@@ -9,5 +9,4 @@ Flight, hotel, and restaurant consistitue the majority of travel expanses. Optim
 Highlight:
 We applied grover's algorithm to optimize flight+hotel+resturant combinations with a given travel budget.
 
-Link to the documentation:
-https://docs.google.com/presentation/d/146SBnRL0wXIRJopmKktrMDF5fmnnRxHsdZzUPGBw5zk/edit?usp=sharing
+Documentation: ./documentation/
