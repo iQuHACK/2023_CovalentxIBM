@@ -26,5 +26,3 @@ For **Training**: run  '''bash python run.py ''' trains the QNN and saves the mo
 2. IBM_OSLO
 3. Pennylane default simulator
 
-
-![alt text](http://url/to/img.png)
