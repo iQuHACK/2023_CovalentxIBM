@@ -48,8 +48,6 @@ def read_data(file_name, target_features=5):
         if sigma == 0: sigma = 1
         inputs[:,j] = 1/sigma * (col - mu)
 
-    inputs, labels = read_data(file_name)
-
     pca = decomposition.PCA(n_components=target_features)
     pca.fit(inputs)
     inputs = pca.transform(inputs)
