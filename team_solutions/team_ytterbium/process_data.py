@@ -40,11 +40,11 @@ def read_data(file_name, target_features=5, pca_filename="data/pca.pkl"):
 
     # Normalize the feature values
     for j in range(inputs.shape[1]):
-        col = inputs[:,j]
+        col = inputs[:, j]
         mu = np.mean(col)
         sigma = np.std(col)
         if sigma == 0: sigma = 1
-        inputs[:,j] = 1/sigma * (col - mu)
+        inputs[:, j] = 1 / sigma * (col - mu)
 
     pca = decomposition.PCA(n_components=target_features)
     pca.fit(inputs)
